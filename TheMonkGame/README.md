@@ -3,38 +3,41 @@
 
 ## <b>Situation</b>
 
-Two Zen monks, Tozan and Seppo, sit down to play a game of Tic-Tac-Toe.
+"The Monk Game" is a boardgame similar to Tic-Tac-Toe common among the monks of a particular monastery. Each player takes turns setting down tiles onto an <b>M</b> x <b>N</b> board with the goal to connect <b>K</b> tiles in a row. In order to keep the game interesting, the monks change the size of the board and the number of tiles every time they play. 
 
-They begin to place their tiles and quickly approach a draw, so Tozan remarks that "It is earthly chains which keep us from enlightenment, the path of the Buddha knows no bounds" to which Seppo agrees and makes the board larger. 
-
-They keep playing on this larger board but keep that they must line up 3 tiles in a row in order to win. As Tozan nears a victory, Seppo exclaims that "True enlightenment is seeking to push beyond oneself and find new heights. It is the sign of a weak man who takes pride in complacency". Tozan understands and proposes they increase the number of tiles in a row needed to win. 
-
-And so the game continues on as the board grows larger and the number of tiles increases. Soon they find themselves completely out of tiles and no one else in the monastery have anymore. 
-
-At a lost for what to do, a monk comes up to them and states that "Our virtue is marked by what we are able to give to the world, not what we are able to take". Upon hearing this, Tozan and Seppo agree that the winner of the game should be determined by who allowed the other more chances to win. 
-
-They ask the third monk if he would count how many more opportunities to win Tozan has than Seppo.  If Tozan has more, than Seppo is more generous and thus he wins the game. If Tozan has less, than he is more generous and thus he wins the game.
+Two monks from the monastery, Tozan and Seppo, are long-time rivals who play "The Monk Game" to test each others wit and strategy. In their most recent game, they attempted to prove their enlightenment and detachment by intentionally not winning. This resulted in the longest game they have ever played, eventually using up all the tiles in the entire monastery. With no more tiles and neither monk having won, they were about to be forced to call it a draw when a third monk approached them. He suggested that whoever had given their opponent more opportunities to win was the more generous/detached monk. Tozan and Seppo agreed with his reasoning and asked if he would count all the tiles on the board to figure out who had been given more opportunities to win.
 
 ## <b>Objective</b>
 
-You are acting as the monk who has to count all of the tiles for Tozan and Seppo. More specifically, you are counting the number of <b>"Winning Spots"</b> that  each player has. A <b>"Winning Spot"</b> is anywhere a player can put a tile and immediately win. If both monks can place a tile in the same spot and win, then the <b>"Winning Spot"</b> is counted for both of them. The monks do not care about the total number of spots but rather how many more spots <u>__Tozan__</u> has over <u>__Seppo__</u>.
-
+You will take the place of the third monk to determine the winner of Tozan and Seppo's bet. For each monk, you will count the number of spots where their tile being placed would result in their victory. The monk with the most number of spots loses the bet. To make it easier, the monks have asked that you specifically report how many more spots Tozan has over Seppo. If Tozan had 5 spots to win and Seppo had 3, you would report back 2. If the numbers were reversed you would report back -2.
 
 ## <b>Input</b>
 
-Every game the monks play they choose a different sized board and a different amount of tiles that need to be lined up in order to win. Addtionally, the monks sometimes use boards that arent perfect squares to play on to test their skills.
+The first line contains the numbers <b>M N K</b> where:
+-   M is the number of rows on the board.
+-   N is the number of columns on the board.
+-   K is the number of tiles in a row needed to win.
 
-## __Sample Input 1__
+Following the first line will be <b>M</b> lines with <b>N</b> characters.  
+
+Each line corresponds to a row on the board and every character corresponds to a spot in that row.  
+
+Empty tiles are marked with "~" while Tozan and Seppo's tiles are marked with "T" and "S" respectively.
+
+## __Sample Input__
 
     3 3 3
     S T ~
     T ~ T
     S ~ S
 
-## __Sample Output 1__
+## __Sample Output__
     -1
 
-## __Sample Input 2__
+## Explanation
+
+
+## __Sample Input__
 
     4 4 3
     S ~ S ~
@@ -42,7 +45,9 @@ Every game the monks play they choose a different sized board and a different am
     S ~ ~ ~ 
     ~ T ~ T
 
-## __Sample Output 2__
+## __Sample Output__
 
     1
+
+## Explanation
     
