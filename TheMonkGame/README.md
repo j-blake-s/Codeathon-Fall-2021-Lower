@@ -27,9 +27,9 @@ Every game the monks play they choose a different sized board and a different am
 ## __Sample Input 1__
 
     3 3 3
-    O X ~
-    X ~ X
-    O ~ O
+    S T ~
+    T ~ T
+    S ~ S
 
 ## __Sample Output 1__
     -1
@@ -37,10 +37,10 @@ Every game the monks play they choose a different sized board and a different am
 ## __Sample Input 2__
 
     4 4 3
-    O ~ O ~
-    ~ X O X
-    O ~ ~ ~ 
-    ~ X ~ X
+    S ~ S ~
+    ~ T S T
+    S ~ ~ ~ 
+    ~ T ~ T
 
 ## __Sample Output 2__
 
