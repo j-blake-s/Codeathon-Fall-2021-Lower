@@ -27,5 +27,4 @@ while len(arr) > 0:
         shift_right = True
         arr.pop(0)
 
-print('\n')
 print("sum is: {}".format(sum))
