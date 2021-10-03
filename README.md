@@ -4,24 +4,23 @@
 
 ## Deadlines:
 
-### October 1st - General Project Description
+### October 10th - Completed Backstory / Problem Setup
 
-    Nothing detailed or over the top, just enough of a description to understand what algorithm/theme
-    each problem will be focusing on. Include this as a README in your respective problem folder. 
-    The use for this is that we can check to see if each division has a wide variety of problems
-    and that people arent accidentally covering the same algorithm. Also we can yell at you if you 
-    lag behind...jk ;).
+    The backstory will just be the context for your problem and will try to hide any reference to the
+    algorithm so that its not super easy to look up. The problem setup is everything else that tells the
+    programmer what they need to do. On the outside, it should look as though you have completed the entire
+    problem and that it is ready to be solved. In reality you do not need to have the solution or test case
+    generation completed yet. (See TheMonkGame and SameStart for an idea of what this looks like)
     
-    This is a soft deadline so its fine if you need to take a little longer to come up with a problem, just 
-    shoot for the 1st and we will see what happens.
-    
+### October 15th - Solution and Input/Output Generation
 
-### October 15th - Final Submission
-
-    We want to make sure there is plenty of time to review each problem and iron out any kinks. 
-    This gives us exactly 1 week until the Codeathon to do just that. By this date you should 
-    be able to theoretically include your problem in the codeathon if need be.
-    
+    By this date you need to have created a solution to your problem as well as a test case generator.
+    The solution should take in the information from your problem and then spit out the right anwsers. 
+    Use the solution to help create and label the test cases with the right anwsers. In theory after
+    this date your problem should be entirely completed. The last week will basically be polishing the
+    problems as well as testing them on Hackerrank to make sure everything works. Furthermore, it would
+    be nice if we could attempt to solve each other's problems to make sure everything makes sense and that
+    its not too hard.
     
 ### October 22nd 7:00pm - Codeathon
 
