@@ -43,6 +43,7 @@ def for_only_solve(file_name):
 				ret_sum += multiplier * num_list[i]
 
 	print("for: sum: {}".format(ret_sum))
+	return ret_sum
 
 
 def naive_solve(file_name):
@@ -82,6 +83,7 @@ def naive_solve(file_name):
 				#print()
 
 	print("naive: sum: {}".format(ret_sum))
+	return ret_sum
 
 DIR = "INPUTS"
 import os
@@ -91,5 +93,36 @@ import os
 # 	naive_solve(file)
 # 	for_only_solve(file)
 
-for_only_solve("test")
-naive_solve("test")
+# for_only_solve("test.txt")
+# naive_solve("test.txt")
+
+import random
+
+def create_test_cases(num_cases):
+	for i in range(0,num_cases):
+		size = random.randint(1,100000)
+		l = [random.randint(0,9) for j in range(0,size)]
+		file_name = "INPUTS/input{}{}.txt".format(int(i/10),i%10)
+		with open(file_name,"a") as f:
+			print(size,file=f)
+			for n,e in enumerate(l):
+				if(n != len(l) - 1):
+					print(e,end=' ',file=f)
+				else:
+					print(e,file=f)
+
+import re
+def create_solns(input_dir):
+	
+	for f in os.listdir(input_dir):
+		file_name = os.path.join(input_dir,f)
+		solution = for_only_solve(file_name)
+
+		number_of_file = re.findall(r'\d+',file_name)[0]
+
+		output_name = "OUTPUTS/output" +number_of_file +".txt"
+
+		with open(output_name,"a") as f:
+			print(solution,file=f)
+
+#for_only_solve("INPUTS/input49.txt")
