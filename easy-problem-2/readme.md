@@ -1,7 +1,32 @@
 author: Lex
 
-Title: "Shift Sift"
+# __Shift Sift__
 
-Desc: have an array of values. You look through the values once, add the up into "sum". Then you shift the array 
-left (remove index 0), run through the values and add up to "sum" again. Then you shift the array right (delete
-index -1), then loop again, adding to "sum". Repeat until one element, loop on the one element, add to "sum", then pop the last element. Now the array has length 0. Enter the sum as your answer.
+## <b>Situation</b>
+You work for a very important industrial pound cake manufacturer. Your job is to operate a large sifting machine that shifts flour from right to left. As this is "pound" cake, your dough can be represented a discrete integers (pound cake is heavy!). You first sum all of the flour in your basin. Then you shake the basin to the right, pushing the rightmost bit of flour off to processing. Then you again sum the flour that remains in the basin (which no longer has the rightmost flour bit). You then shift left, removing the leftmost bit and summing what remains. Continue until there is only one bit of flour remaining. Each sum adds to a total sum, which you report back to the pound cake president.
+
+Below is an example:
+
+
+Example: 
+Input: [1,2,3]
+
+    [1,2,3] -> sum = 6
+     [1,2]  -> sum = 3
+      [2]   -> sum = 2
+
+Output: final sum: 6 + 3 + 2 = 11
+
+Example:
+input: [1,2,3,4,5]
+
+    [1,2,3,4,5] 
+     [1,2,3,4]
+      [2,3,4]
+       [2,3]
+        [3]
+
+Output:
+    Sum is: 42
+
+
