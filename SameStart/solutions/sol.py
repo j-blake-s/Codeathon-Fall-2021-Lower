@@ -1,12 +1,7 @@
 x, y = map(int, input().split())
-board1 = []
-for _ in range(y):
-    board1.append(input())
-board2 = []
+board1 = [input() for _ in range(y)]
 _ = input()
-for _ in range(y):
-    board2.append(input())
-
+board2 = [input() for _ in range(y)]
 total = 0
 for i in range(y):
     for j in range(x):

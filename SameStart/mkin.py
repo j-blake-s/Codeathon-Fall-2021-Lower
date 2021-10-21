@@ -1,7 +1,7 @@
 #!/usr/local/bin/python3
-from random import randint, choice
+from random import randint, choice, seed
 case_num = int(input())
-
+# seed(999)
 # 0 and 1 are the sample cases
 maze0 ='''
 #####...####
