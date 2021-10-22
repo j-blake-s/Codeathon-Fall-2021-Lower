@@ -1,0 +1,14 @@
+The first case forms a square, so it is True.
+
+The second case forms a Y like shape, which is not a polygon, so False is printed
+
+
+
+This forms a shape like this,
+
+
+![image](https://s3.amazonaws.com/hr-assets/0/1634739995-64a43f9699-Untitleddrawing.png)
+
+which is not a polygon as it has a line connecting points in the middle. 
+
+(Hint: Each point should connect to exactly 2 other points)
