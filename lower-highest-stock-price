@@ -1,2 +1,0 @@
-Stock prices go up and down over a given period. Prices will be stored in a list. The goal is maximize the value of a sale, so you want to buy low and sell high. 
-The problem subject could change to something other than stocks, but for now it will be stocks. 
